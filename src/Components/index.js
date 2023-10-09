@@ -1,1 +1,2 @@
-export { default as StickyNavbar} from './PageNavbar'
+export { default as Nav} from './Nav'
+export { default as ProductsList} from './ProductsList'

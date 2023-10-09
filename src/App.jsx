@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import PageNavbar from './Components/PageNavbar'
-
-
+import React from 'react'
+import { Nav, ProductsList } from './Components'
+import { Routes, Route } from 'react-router-dom';
+import Cart from './Pages/Cart';
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-    </>
+    <React.Fragment>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<ProductsList />} />
+        <Route path='/cart' element={<Cart/>} />
+        <Route path='/profile' element={<h1>Profile</h1>} />
+      </Routes>
+    </React.Fragment>
   )
 }
 
